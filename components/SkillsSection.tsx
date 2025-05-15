@@ -28,9 +28,11 @@ const SkillsSection = () => {
     { name: "Other Tools (Jira, Trello)", level: 70, category: "Databases & DevOps" },
   ];
 
-  const categories = [
-    ...new Set(skillsData.map((skill) => skill.category)),
-  ].map((category, index) => ({ id: category, title: category, index }));
+const uniqueCategories = skillsData
+  .map(skill => skill.category)
+  .filter((category, index, array) => array.indexOf(category) === index);
+
+const categories = uniqueCategories.map((category, index) => ({ id: category, title: category, index }));
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
