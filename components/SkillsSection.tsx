@@ -17,10 +17,10 @@ const SkillsSection = () => {
   const isDarkMode = theme === "dark";
 
   const skillsData: Skill[] = [
-    { name: "HTML5, CSS3, JavaScript", level: 50, category: "Frontend & Backend Development" },
+    { name: "HTML5, CSS3, JavaScript", level: 90, category: "Frontend & Backend Development" },
     { name: "React.js, Next.js, TypeScript", level: 80, category: "Frontend & Backend Development" },
     { name: "AJAX, Responsive Design, Figma", level: 90, category: "Frontend & Backend Development" },
-    { name: "Node.js, Express.js", level: 80, category: "Frontend & Backend Development" },
+    { name: "Node.js, Express.js, Hono", level: 80, category: "Frontend & Backend Development" },
     { name: "PHP, MySQL, MVC Architecture", level: 70, category: "Frontend & Backend Development" },
     { name: "REST API Development, OOP", level: 90, category: "Frontend & Backend Development" },
     { name: "MongoDB, PostgreSQL, DBMS", level: 85, category: "Databases & DevOps" },
