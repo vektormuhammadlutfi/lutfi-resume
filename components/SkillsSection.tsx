@@ -1,8 +1,6 @@
 "use client";
-
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
-import { Code, Database, Layout } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 
@@ -15,25 +13,37 @@ interface Skill {
 const SkillsSection = () => {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
-
+  
+  // Updated skillsData based on your previous input
   const skillsData: Skill[] = [
-    { name: "HTML5, CSS3, JavaScript", level: 90, category: "Frontend & Backend Development" },
-    { name: "React.js, Next.js, TypeScript", level: 80, category: "Frontend & Backend Development" },
-    { name: "AJAX, Responsive Design, Figma", level: 90, category: "Frontend & Backend Development" },
-    { name: "Node.js, Express.js, Hono", level: 80, category: "Frontend & Backend Development" },
-    { name: "PHP, MySQL, MVC Architecture", level: 70, category: "Frontend & Backend Development" },
-    { name: "REST API Development, OOP", level: 90, category: "Frontend & Backend Development" },
-    { name: "MongoDB, PostgreSQL, DBMS", level: 85, category: "Databases & DevOps" },
-    { name: "Git, GitHub, Docker", level: 90, category: "Databases & DevOps" },
-    { name: "Other Tools (Jira, Trello)", level: 70, category: "Databases & DevOps" },
+    { name: "HTML5, CSS3", level: 90, category: "Web & Software Development" },
+    { name: "JavaScript", level: 90, category: "Web & Software Development" },
+    { name: "React.js, Next.js", level: 80, category: "Web & Software Development" },
+    { name: "AJAX, Responsive Design", level: 90, category: "Web & Software Development" },
+    { name: "Node.js, Hono, Express.js", level: 80, category: "Web & Software Development" },
+    { name: "PHP, MySQL", level: 75, category: "Web & Software Development" },
+    { name: "REST API Development", level: 85, category: "Web & Software Development" },
+    { name: "Software Architecture", level: 80, category: "Web & Software Development" },
+    { name: "Database Management (MySQL, MongoDB, PostgreSQL)", level: 80, category: "Databases & DevOps" },
+    { name: "Git, CI/CD", level: 85, category: "Databases & DevOps" },
+    { name: "Figma", level: 70, category: "Web & Software Development" },
+    { name: "CodeIgniter, Laravel", level: 90, category: "Web & Software Development" },
+    { name: "Problem Solving, Analytical Skills", level: 90, category: "Soft Skills" },
+    { name: "Teamwork, Collaboration", level: 90, category: "Soft Skills" },
+    { name: "Time Management", level: 85, category: "Soft Skills" },
+    { name: "Adaptability", level: 80, category: "Soft Skills" },
+    { name: "Communication", level: 85, category: "Soft Skills" },
+    { name: "Attention to Detail", level: 90, category: "Soft Skills" },
+    { name: "Creativity", level: 80, category: "Soft Skills" },
+    { name: "Project Management", level: 75, category: "Soft Skills" }
   ];
 
-const uniqueCategories = skillsData
-  .map(skill => skill.category)
-  .filter((category, index, array) => array.indexOf(category) === index);
+  const uniqueCategories = skillsData
+    .map(skill => skill.category)
+    .filter((category, index, array) => array.indexOf(category) === index);
 
-const categories = uniqueCategories.map((category, index) => ({ id: category, title: category, index }));
-
+  const categories = uniqueCategories.map((category, index) => ({ id: category, title: category, index }));
+  
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -58,10 +68,11 @@ const categories = uniqueCategories.map((category, index) => ({ id: category, ti
           variants={fadeIn}
           className="text-center mb-12"
         >
-          <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${textColor}`}>Skills & Expertise</h2>
+          <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${textColor}`}>
+            Skills & Expertise
+          </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
         </motion.div>
-
         <Tabs defaultValue={categories[0].id} className="w-full">
           <TabsList className="flex gap-x-2 mb-10">
             {categories.map((category) => (
