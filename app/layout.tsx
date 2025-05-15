@@ -27,14 +27,14 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Lutfi - Web Developer & Designer" />
         <meta property="og:description" content="Professional portfolio showcasing my skills, projects, and experience in web development and design" />
-        <meta property="og:image" content="" /> {/* Replace with your image URL */}
+        <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/d9f2fb8b-b2fc-4eec-b2c3-48d45a782ccb.jpg?token=pbWzZJfkD2W8lxG1hlErN2qmp2LlVi7aIu2wYa-v79Y&height=882&width=1200&expires=33283297554" />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:domain" content="lutfi-resume.vercel.app" />
-        <meta name="twitter:url" content="https://lutfi-resume.vercel.app/" />
+        <meta property="twitter:domain" content="lutfi-resume.vercel.app" />
+        <meta property="twitter:url" content="https://lutfi-resume.vercel.app/" />
         <meta name="twitter:title" content="Lutfi - Web Developer & Designer" />
         <meta name="twitter:description" content="Professional portfolio showcasing my skills, projects, and experience in web development and design" />
-        <meta name="twitter:image" content="" /> {/* Replace with your image URL */}
+        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/d9f2fb8b-b2fc-4eec-b2c3-48d45a782ccb.jpg?token=pbWzZJfkD2W8lxG1hlErN2qmp2LlVi7aIu2wYa-v79Y&height=882&width=1200&expires=33283297554" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
