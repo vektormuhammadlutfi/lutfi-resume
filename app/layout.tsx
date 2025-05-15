@@ -35,6 +35,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Lutfi - Web Developer & Designer" />
         <meta name="twitter:description" content="Professional portfolio showcasing my skills, projects, and experience in web development and design" />
         <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/d9f2fb8b-b2fc-4eec-b2c3-48d45a782ccb.jpg?token=pbWzZJfkD2W8lxG1hlErN2qmp2LlVi7aIu2wYa-v79Y&height=882&width=1200&expires=33283297554" />
+        <link rel="icon" href="https://code.visualstudio.com/assets/favicon.ico" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
