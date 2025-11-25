@@ -62,24 +62,35 @@ const AboutSection = () => {
             variants={fadeIn}
             className="space-y-6"
           >
-            <p className={`text-lg md:text-xl leading-relaxed ${textColor}`}>
-              Results-driven Full-Stack Web Developer & UI/UX Designer with 8+ years of experience building user-centric web applications.  Master's in Computer Systems & Bachelor's in Informatics Engineering from STMIK Handayani Makassar.
+            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
+              <span className="text-sm font-semibold text-primary">💼 Professional Profile</span>
+            </div>
+            
+            <h3 className={`text-2xl md:text-3xl font-bold ${textColor} mb-4`}>
+              Transforming Data Into Actionable Insights
+            </h3>
+            
+            <p className={`text-base md:text-lg leading-relaxed ${textColor}`}>
+              Results-driven <strong>Full-Stack Developer & Data Professional</strong> with 8+ years of experience building user-centric web applications and implementing data-driven solutions.
             </p>
-            <p className={`text-lg md:text-xl leading-relaxed ${mutedTextColor}`}>
-              Proficient in Node.js, React, PHP, MySQL, PostgreSQL, MongoDB, REST APIs, responsive design, and agile methodologies.  Delivering clean code and intuitive interfaces.
+            
+            <p className={`text-base md:text-lg leading-relaxed ${mutedTextColor}`}>
+              Master's in Computer Systems & Bachelor's in Informatics Engineering from STMIK Handayani Makassar. Proficient in Node.js, React, PHP, MySQL, PostgreSQL, MongoDB, REST APIs, and agile methodologies.
             </p>
-            <div className="grid grid-cols-3 gap-8 text-center"> {/* Stats */}
-              <div>
-                <p className={`text-4xl font-bold ${textColor}`}>19+</p>
-                <p className={`text-sm ${mutedTextColor}`}>Completed Projects</p>
+
+            {/* Key Highlights */}
+            <div className="space-y-3 pt-4">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                <p className={`${mutedTextColor}`}>Led ISO 27001 implementation for enterprise DMS systems</p>
               </div>
-              <div>
-                <p className={`text-4xl font-bold ${textColor}`}>95%</p>
-                <p className={`text-sm ${mutedTextColor}`}>Client Satisfaction</p>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                <p className={`${mutedTextColor}`}>Developed 19+ successful projects with 95% client satisfaction</p>
               </div>
-              <div>
-                <p className={`text-4xl font-bold ${textColor}`}>8+</p>
-                <p className={`text-sm ${mutedTextColor}`}>Years Experience</p>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                <p className={`${mutedTextColor}`}>Expert in data mining, predictive analytics, and full-stack development</p>
               </div>
             </div>
           </motion.div>

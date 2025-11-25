@@ -7,6 +7,7 @@ const AboutSection = dynamic(() => import('@/components/AboutSection'), { ssr: t
 const ExperienceSection = dynamic(() => import('@/components/ExperienceSection'), { ssr: true });
 const SkillsSection = dynamic(() => import('@/components/SkillsSection'), { ssr: true });
 const ProjectsSection = dynamic(() => import('@/components/ProjectsSection'), { ssr: true });
+const LinkedInSection = dynamic(() => import('@/components/LinkedInSection'), { ssr: true });
 const ContactSection = dynamic(() => import('@/components/ContactSection'), { ssr: true });
 
 export default function Home() {
@@ -15,9 +16,10 @@ export default function Home() {
       <Toaster position="top-right" />
       <HeroSection />
       <AboutSection />
-      <ExperienceSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
+      <LinkedInSection />
       <ContactSection />
     </>
   );

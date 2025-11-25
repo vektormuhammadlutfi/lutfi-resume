@@ -45,17 +45,38 @@ const HeroSection = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className={`text-lg md:text-xl ${mutedTextColor} mb-8 max-w-2xl mx-auto lg:mx-0`}>
+            <p className={`text-lg md:text-xl ${mutedTextColor} mb-6 max-w-2xl mx-auto lg:mx-0`}>
               Specializing in Data Mining & Predictive Analytics with expertise in full-stack development and data science.
             </p>
+            
+            {/* Achievement Stats */}
+            <div className="grid grid-cols-3 gap-4 mb-8 max-w-md mx-auto lg:mx-0">
+              <div className="text-center lg:text-left">
+                <div className="text-2xl md:text-3xl font-bold text-primary">8+</div>
+                <div className={`text-xs md:text-sm ${mutedTextColor}`}>Years Exp</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl md:text-3xl font-bold text-primary">19+</div>
+                <div className={`text-xs md:text-sm ${mutedTextColor}`}>Projects</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl md:text-3xl font-bold text-primary">95%</div>
+                <div className={`text-xs md:text-sm ${mutedTextColor}`}>Satisfaction</div>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="gap-2">
-                <Send className="h-4 w-4" />
-                Contact Me
+              <Button size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-shadow" asChild>
+                <a href="#contact">
+                  <Send className="h-4 w-4" />
+                  Let's Work Together
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="gap-2">
-                <FileText className="h-4 w-4" />
-                Download Resume
+              <Button size="lg" variant="outline" className="gap-2" asChild>
+                <a href="#projects">
+                  <FileText className="h-4 w-4" />
+                  View Portfolio
+                </a>
               </Button>
             </div>
           </motion.div>
