@@ -89,7 +89,7 @@ const HeroSection = () => {
           >
             <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] relative rounded-full overflow-hidden border-4 border-primary/20">
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQGo_XJr7Mww1Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1667053383227?e=1752710400&v=beta&t=vBczwSSsuAYcRSFKvhHS2k3p2U3ZgOYJTnkmI6Rbhfc"
+                src="/profile-photo.jpg"
                 alt="Muhammad Lutfi - Full Stack Developer and Data Professional"
                 className="w-full h-full object-cover"
               />
