@@ -12,6 +12,27 @@
 				"$tsc"
 			],
 			"group": "build"
+		},
+		{
+			"label": "Next.js Build",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"build"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Next.js Dev",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"dev"
+			],
+			"group": "test"
 		}
 	]
 }
